@@ -1,0 +1,38 @@
+.container {
+    max-width: 800px;
+    margin: auto 0;
+
+}
+/*space is the descendent combinator*/
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1; 
+}
+
+/* Love Hate */
+nav a,
+nav a:link,
+nav a:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform .5s;
+}
+
+nav:hover,
+nav:focus {
+    text-decoration: underline;
+    transform: scale(1.2);
+
+}
+
+nav:active {
+    transform: scale(1.2) translate(10px);
+
+}
